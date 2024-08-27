@@ -1,0 +1,210 @@
+*{
+    font-family:'Open Sans', sans-serif;
+    font-family:'Lato', sans-serif;
+    font-family:'Work Sans', sans-serif;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 10px 20px 0;
+}
+.menu,.navbar,nav a{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(82, 86, 89);
+    font-weight: 500;
+    justify-items: center;
+    align-items: center;
+}
+nav li{
+    margin: 0 15px;
+}
+.title{
+    font-size: xx-large;
+    color: black;
+}
+.des-title{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+.description{
+    color: rgb(141, 141, 141);
+    text-align: center;
+    font-weight: 500;
+    margin: 0 250px;
+    font-size: small;
+}
+.btn{
+    background-color: coral;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid coral;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 25px;
+}
+.banner{
+    width: 80%;
+    height: 100%;
+    margin: 25px auto;
+    display: block;   
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+.feature{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.imgrid{
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+    gap: 5px;   
+}
+.imgrid img{
+    width: 100%;
+    height: 100%;
+}
+.btnleft{
+    background-color: coral;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid coral;
+}
+#ash{
+    color: rgb(141, 141, 141);
+    font-weight: 500;
+}
+#coral{
+    color: coral;
+}
+#center{
+    text-align: center;
+    margin-top: 80px;
+}
+.feature-description{
+    padding-left: 30px;
+    text-align: justify;
+}
+.feature-des{
+    color: rgb(141, 141, 141);
+    font-size: small;
+}
+.girl{
+    width: 90%;
+    height: 80%;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+.card-container{
+    width: 80%;
+}
+.card{
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px 20px;
+    text-align: justify;
+    margin-top: 15px;
+}
+#btn-10{
+    border: 1px solid coral;
+    border-radius: 5px;
+    background-color: coral;
+    padding: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight:bolder;
+}
+.icon-card{
+    border: 1px solid coral;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px 5px;
+    text-align: center;
+    margin-top: 15px;
+    margin-inline: 40px;
+}
+.sponsor{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.sponsor img{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+   text-align: center;
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 30px 0;
+  margin: 50px auto 100px;
+  width: 80%;
+}
+
+/* header responsive */
+@media screen and (max-width:768px){
+    .menu,.navbar,nav a{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content:flex-start;
+        text-decoration: none;
+        color: rgb(82, 86, 89);
+        font-weight: 500;
+        justify-items: center;
+        align-items: center;
+    }
+    header{
+        padding:0px;
+    }
+    nav li{
+        margin: 0 10px;
+    }
+    .description{
+        color: rgb(141, 141, 141);
+        text-align: center;
+        font-weight: 500;
+        margin: 0;
+        font-size: small;
+    }
+    /* feature responsive */
+    .imgrid{
+        display: grid;
+        grid-template-columns: repeat(1,250px);  
+    }
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .card{
+        width: 250px;
+    }
+    .girl{
+        margin-top: 30px;
+    }
+    
+}
